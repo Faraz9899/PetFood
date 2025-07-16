@@ -1,3 +1,411 @@
-<h1>Hello World</h1>
-<h1>Greetings from faraz</h1>
-<p>My site is live!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFood</title>
+    <meta name="description" content="PetFood provides cutting-edge technology solutions for businesses. Learn about our services, products, and expertise in web development, mobile apps, and digital transformation.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>PetsFood</h1>
+                <!--<p>Your PetFood Partner</p>-->
+            </div>
+
+
+            <!-- Navigation Tabs -->
+            <nav class="tab-navigation">
+                <button class="tab-button active" onclick="showTab('home', event)">Home</button>
+                <!--<button class="tab-button" onclick="showTab('services', event)">Services</button>-->
+                <button class="tab-button" onclick="showTab('about', event)">About and Contact Us</button>
+                <button class="tab-button" onclick="showTab('petFoodandrawmaterials', event)">Pet Food and Raw Materials</button>
+                <button class="tab-button" onclick="showTab('organicfood', event)">Organic Food</button>
+                <button class="tab-button" onclick="showTab('organicfertilizer', event)">Organic Fertilizer</button>
+
+                <!--<button class="tab-button" onclick="showTab('contact', event)">Contact</button>-->
+            </nav>
+        </header>
+
+        <!-- 5 Tab Content Sections -->
+        <main class="tab-content">
+            <!-- Home Tab -->
+            <div id="home" class="tab-panel active">
+                <div class="h2">
+                    <h4>Welcome to PetsFood</h4>
+                    <p style="font-size:19px!important;">We are Apeda registered export company from India. We supply food commodities and raw-materials for Human, cattle, poultry and fisheries.</p>
+                </div>
+                <div class="hero-section">
+                    <div class="hero-content">
+                        <div style="display:flex;">
+                            <div class="col-md-6" style="padding: 2em; border-right: 3px solid #3498db;">
+                                <h3>Trusted Nutrition for Pets and Farm Animals</h3>
+                                <p>Providing high-quality, nutrient-rich feed solutions for pets and livestock—crafted with care, backed by science, and trusted by farmers and pet owners alike.</p>
+                                <div class="features-grid">
+                                    <div class="feature-card">
+                                        <!--<h4>🚀 Innovation</h4>
+                                        <p>Cutting-edge solutions using the latest technologies</p>-->
+                                        <img src="Images/Dog_Cat.jpg" alt="Dog and Cat eating pet food" class="product-image">
+                                        <h2 class="product-title">Pet Food Products</h2>
+                                        <p class="product-description">
+                                            Premium quality pet food including dry, wet, and raw materials specially formulated for dogs, cats, poultry, and more.
+                                        </p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <!--h4>⚡ Performance</h4>
+                                        <p>Fast, reliable, and scalable applications</p>-->
+                                        <img src="Images/Cow.jpg" alt="Cows feeding on farm" class="product-image">
+                                        <h2 class="product-title">Cattle Feed & Nutrition</h2>
+                                        <p class="product-description">
+                                            We offer high-quality cattle feed enriched with essential nutrients to support milk production, growth, and overall animal health. Our feed is crafted from organic ingredients and processed under strict quality control to ensure the best for your livestock.
+                                        </p>
+                                    </div>
+                                    <!--<div class="feature-card">
+                                        <h4>🎯 Results</h4>
+                                        <p>Focused on delivering measurable business value</p>
+                                    </div>-->
+                                </div>
+                            </div>
+                            <div class="col-md-6" style="padding:2em;">
+                                <!--<h3>Transforming Ideas into Digital Reality</h3>
+                                <p>At PetFood, we specialize in creating innovative technology solutions that drive business growth.</p>
+                                <div class="features-grid">
+                                    <div class="feature-card">
+                                        <h4>🚀 Innovation</h4>
+                                        <p>Cutting-edge solutions using the latest technologies</p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <h4>⚡ Performance</h4>
+                                        <p>Fast, reliable, and scalable applications</p>
+                                    </div>-->
+                                    <!--<div class="feature-card">
+                                        <h4>🎯 Results</h4>
+                                        <p>Focused on delivering measurable business value</p>
+                                    </div>-->
+                                <!--</div>-->
+                                <h3>Trusted Nutrition for Pets and Farm Animals</h3>
+                                <p>Providing high-quality, nutrient-rich feed solutions for pets and livestock—crafted with care, backed by science, and trusted by farmers and pet owners alike.</p>
+                                <div class="features-grid">
+                                    <div class="feature-card">
+                                        <!--<h4>🚀 Innovation</h4>
+                                        <p>Cutting-edge solutions using the latest technologies</p>-->
+                                        <img src="Images/Dog_Cat.jpg" alt="Dog and Cat eating pet food" class="product-image">
+                                        <h2 class="product-title">Pet Food Products</h2>
+                                        <p class="product-description">
+                                            Premium quality pet food including dry, wet, and raw materials specially formulated for dogs, cats, poultry, and more.
+                                        </p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <!--h4>⚡ Performance</h4>
+                                        <p>Fast, reliable, and scalable applications</p>-->
+                                        <img src="Images/Cow.jpg" alt="Cows feeding on farm" class="product-image">
+                                        <h2 class="product-title">Cattle Feed & Nutrition</h2>
+                                        <p class="product-description">
+                                            We offer high-quality cattle feed enriched with essential nutrients to support milk production, growth, and overall animal health. Our feed is crafted from organic ingredients and processed under strict quality control to ensure the best for your livestock.
+                                        </p>
+                                    </div>
+                                    <!--<div class="feature-card">
+                                        <h4>🎯 Results</h4>
+                                        <p>Focused on delivering measurable business value</p>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Tab -->
+            <!--<div id="services" class="tab-panel">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with modern technologies.</p>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>E-commerce Solutions</li>
+                        <li>Content Management Systems</li>
+                        <li>Progressive Web Apps</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile Development</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android.</p>
+                    <ul>
+                        <li>iOS & Android Apps</li>
+                        <li>Cross-platform Solutions</li>
+                        <li>App Store Optimization</li>
+                        <li>Mobile UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Digital Transformation</h3>
+                    <p>Help businesses modernize their operations and embrace digital technologies.</p>
+                    <ul>
+                        <li>Process Automation</li>
+                        <li>Cloud Migration</li>
+                        <li>Data Analytics</li>
+                        <li>System Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>-->
+            <!-- Products Tab -->
+            <div id="petFoodandrawmaterials" class="tab-panel">
+                <h2>Our Products</h2>
+                <div class="products-container">
+                    <div class="product-showcase">
+                        <h3>CloudSync Pro</h3>
+                        <p class="product-tagline">Professional File Synchronization Solution</p>
+                        <div class="product-details">
+                            <div class="product-description">
+                                <p>CloudSync Pro is an enterprise-grade file synchronization solution.</p>
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Real-time file synchronization</li>
+                                    <li>Advanced encryption and security</li>
+                                    <li>Multi-platform support</li>
+                                    <li>Automated backup scheduling</li>
+                                </ul>
+                            </div>
+                            <div class="product-stats">
+                                <div class="stat">
+                                    <h4>10,000+</h4>
+                                    <!--<iframe width="100%" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                                        frameborder="0" allowfullscreen></iframe>-->
+                                    <p>Active Users</p>
+                                </div>
+                                <div class="stat">
+                                    <h4>99.9%</h4>
+                                    <p>Uptime</p>
+                                </div>
+                                <div class="stat">
+                                    <h4>500TB</h4>
+                                    <p>Data Synced</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="organicfood" class="tab-panel">
+                <h2>Our Products</h2>
+                <div class="products-container">
+                    <div class="product-showcase">
+                        <h3>CloudSync Pro</h3>
+                        <p class="product-tagline">Professional File Synchronization Solution</p>
+                        <div class="product-details">
+                            <div class="product-description">
+                                <p>CloudSync Pro is an enterprise-grade file synchronization solution.</p>
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Real-time file synchronization</li>
+                                    <li>Advanced encryption and security</li>
+                                    <li>Multi-platform support</li>
+                                    <li>Automated backup scheduling</li>
+                                </ul>
+                            </div>
+                            <div class="product-stats">
+                                <div class="stat">
+                                    <h4>10,000+</h4>
+                                    <!--<iframe width="100%" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                                        frameborder="0" allowfullscreen></iframe>-->
+                                    <p>Active Users</p>
+                                </div>
+                                <div class="stat">
+                                    <h4>99.9%</h4>
+                                    <p>Uptime</p>
+                                </div>
+                                <div class="stat">
+                                    <h4>500TB</h4>
+                                    <p>Data Synced</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="organicfertilizer" class="tab-panel">
+                <h2>Our Products</h2>
+                <div class="products-container">
+                    <div class="product-showcase">
+                        <h3>CloudSync Pro</h3>
+                        <p class="product-tagline">Professional File Synchronization Solution</p>
+                        <div class="product-details">
+                            <div class="product-description">
+                                <p>CloudSync Pro is an enterprise-grade file synchronization solution.</p>
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Real-time file synchronization</li>
+                                    <li>Advanced encryption and security</li>
+                                    <li>Multi-platform support</li>
+                                    <li>Automated backup scheduling</li>
+                                </ul>
+                            </div>
+                            <div class="product-stats">
+                                <div class="stat">
+                                    <h4>10,000+</h4>
+                                    <!--<iframe width="100%" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                                        frameborder="0" allowfullscreen></iframe>-->
+                                    <p>Active Users</p>
+                                </div>
+                                <div class="stat">
+                                    <h4>99.9%</h4>
+                                    <p>Uptime</p>
+                                </div>
+                                <div class="stat">
+                                    <h4>500TB</h4>
+                                    <p>Data Synced</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Tab -->
+            <div id="about" class="tab-panel">
+                <h2>About PetFood</h2>
+                <div class="about-content">
+                    <div class="company-story">
+                        <h3>Our Story</h3>
+                        <p>
+                            We are growing, manufacturing, trading and exporting Agro products, growth enhancer, Organic fertilizer, cattle feed, poultry feed and fish meal etc.
+                            In this process we are making many raw-material to make these products. Supply these raw-material and finished products locally in India and export Overseas  countries. We are registered export import company since 2005.
+                        </p>
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="year">2005</div>
+                                <div class="milestone">Company Founded</div>
+                            </div>
+                            <!--<div class="timeline-item">
+                            <div class="year">2019</div>
+                            <div class="milestone">First Major Client</div>
+                        </div>-->
+                            <div class="timeline-item">
+                                <div class="year">2025</div>
+                                <div class="milestone">Global Reach</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="team-section">
+                    <h3>Our Team</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <h4>Sarah Johnson</h4>
+                            <p class="role">CEO & Founder</p>
+                            <p>10+ years in tech leadership</p>
+                        </div>
+                        <div class="team-member">
+                            <h4>Mike Chen</h4>
+                            <p class="role">CTO</p>
+                            <p>Full-stack developer with expertise in cloud architecture</p>
+                        </div>
+                    </div>
+                </div>-->
+                    <div class="contact-section">
+                        <h2>Contact Us</h2>
+                        <div class="contact-details">
+                            <p><strong>Company Name:</strong> Galaxy Exhibitions</p>
+                            <p><strong>IE Code:</strong> 0505041448 (Registered since 2005)</p>
+                            <p><strong>APEDA #:</strong> 198685</p>
+                            <p><strong>FSSAI Reg. No:</strong> 23320005001347</p>
+                            <p><strong>GST Reg. No:</strong> 07AGHPA3849G1ZJ</p>
+                            <p><strong>Registered By:</strong> Agriculture and Processed Food Products Export Development Authority, Govt. of India</p>
+
+                            <p>
+                                <strong>Registered Address:</strong><br>
+                                A-13/100-B, 2nd Floor, DDA Flats, Inderlok, Delhi-110035, India
+                            </p>
+
+                            <p>
+                                <strong>Corporate Office:</strong><br>
+                                G-26, Syndicate House, Shahzada Bagh Industrial Area, Inderlok, Delhi-110035
+                            </p>
+
+                            <p>
+                                <strong>Agriculture Farms:</strong><br>
+                                Islam Nagar, District Budaun, Uttar Pradesh
+                            </p>
+
+                            <p><strong>Phone:</strong> +91-11-45178926</p>
+                            <p><strong>Email:</strong> <a href="mailto:galaxyexhibitions@gmail.com">galaxyexhibitions@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Contact Tab -->
+            <!--<div id="contact" class="tab-panel">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Ready to start your next project? We'd love to hear from you.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h4>📧 Email</h4>
+                            <p>hello@PetFood.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>📞 Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>🏢 Office</h4>
+                            <p>123 Tech Street, Suite 100</p>
+                            <p>San Francisco, CA 94105</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="mobile-development">Mobile Development</option>
+                                <option value="digital-transformation">Digital Transformation</option>
+                                <option value="consulting">Consulting</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>-->
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
