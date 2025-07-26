@@ -304,7 +304,7 @@ body {
 
 .company-story h3 {
     color: #2c3e50;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -611,7 +611,7 @@ body {
     }
     
     .tab-panel h2 {
-        font-size: 1.8rem;
+        font-size: 1.1rem;
     }
     
     .hero-content h3 {
@@ -677,8 +677,8 @@ body {
     .tab-button {
         flex: 1;
         min-width: auto;
-        font-size: 0.8rem;
-        padding: 0.75rem 0.5rem;
+        font-size: 0.8rem!important;
+        padding: 0.75rem 0.4rem;
     }
     
     .hero-section {
@@ -692,5 +692,48 @@ body {
     
     .stat {
         margin: 0;
+    }
+
+    .hero-content-flex {
+        display: block !important; /* ⬅️ Override inline style */
+        flex-direction: unset !important; /* optional, just to reset flex props */
+    }
+
+    .bordered-col {
+        border-right: none !important; /* Remove right border */
+    }
+
+    .fssai-img {
+        display: block;
+        margin: 0 auto;
+        margin-top: -2em;
+    }
+    .company-story {
+        margin-bottom: 0rem;
+    }
+    .ourstory {
+        text-align: center;
+    }
+    .botton-text {
+        padding: 2rem 1rem;
+    }
+    .header{
+       display:block;
+    }
+    .tab-panel .h2 {
+        color: #2c3e50;
+        font-size: 2.2rem;
+        margin-bottom: -1rem;
+        text-align: center;
+        border-top: 3px solid #3498db;
+        border-bottom: none;
+        padding-bottom: 0rem;
+        margin-top: -1rem;
+    }
+    .product-showcase {
+        margin-bottom: 0rem;
+    }
+    .product-showcase h3 {
+        font-size: 1.1rem !important;
     }
 }
